@@ -11,16 +11,17 @@
     
     .cloud {
       position: absolute;
+      height: fit-content;
     }
   }
   
   .title {
-  font-size: 10rem;
-  color: #fff;
-  animation: neon 1.5s ease-in-out infinite alternate;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    font-size: 8rem;
+    color: #fff;
+    animation: neon 1.5s ease-in-out infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
