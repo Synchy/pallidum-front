@@ -27,11 +27,33 @@
 
 @keyframes neon {
   from {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #B5179E,
-      0 0 70px #B5179E, 0 0 80px #B5179E, 0 0 100px #B5179E, 0 0 150px #B5179E;
+    filter: 
+    drop-shadow(0 0 .5px #fff)
+    drop-shadow(0 0 1px #fff) 
+    drop-shadow(0 0 1.5px #fff)
+    drop-shadow(0 0 1px #B5179E)
+    drop-shadow(0 0 3px #B5179E)
+    drop-shadow(0 0 5px #B5179E)
+    drop-shadow(0 0 8px #B5179E)
+    drop-shadow(0 0 12px #B5179E);
   }
   to {
-    text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 20px #B5179E,
-      0 0 35px #B5179E, 0 0 40px #B5179E, 0 0 50px #B5179E, 0 0 75px #B5179E;
+    filter: 
+    drop-shadow(0 0 1px #fff)
+    drop-shadow(0 0 1.5px #fff)
+    drop-shadow(0 0 2px #fff)
+    drop-shadow(0 0 3px #B5179E)
+    drop-shadow(0 0 5px #B5179E)
+    drop-shadow(0 0 8px #B5179E)
+    drop-shadow(0 0 12px #B5179E)
+    drop-shadow(0 0 5px #B5179E);
   }
+}
+
+h2 {
+  color: white;
+  height: fit-content;
+  width: fit-content;
+  font-size: 3rem;
+  position: absolute;
 }
