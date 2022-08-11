@@ -6,7 +6,7 @@ import Stars from '../components/Stars'
 const Home = () => {
   return (
     <div className='Home'>
-      <Intro />
+      {/* <Intro /> */}
       <Stars />
     </div>
   )
