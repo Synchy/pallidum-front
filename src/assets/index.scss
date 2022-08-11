@@ -1,5 +1,8 @@
 //Components
 @use './components/Intro';
+
+@use './components/stars';
+
 // @use './components/Event';
 @use './components/Chronology';
 @use './components/Info';
@@ -10,7 +13,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
-
 
 * {
   padding: 0;
