@@ -1,7 +1,20 @@
+import { Routes, Route } from 'react-router-dom'
+
+import Intro from '../components/Intro'
+// import Event from '../components/Event'
+import Chronology from '../components/Chronology'
+
 const Home = () => {
   return (
     <div className='Home'>
-      <h1>Pallidum</h1>
+      <Routes>
+        <Route path='/' element={<Intro />} />
+        {/* <Route path='/info' element={<Info />} />
+        <Route path='/stars' element={<Stars />} /> */}
+        <Route path='/chronologie' element={<Chronology />} />
+        {/* <Route path='/evenements' element={<Event />} /> */}
+        {/* <Route path='/inscription' element={<UserForm />} /> */}
+      </Routes>
     </div>
   )
 }

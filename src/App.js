@@ -1,9 +1,9 @@
-import Chronology from './components/Chronology'
+import Home from './screens/Home'
 
 function App() {
   return (
     <div className='App'>
-      <Chronology />
+      <Home />
     </div>
   )
 }

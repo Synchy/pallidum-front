@@ -1,14 +1,19 @@
+//Components
+@use './components/Intro';
+// @use './components/Event';
 
 
 //Screens
 @use './App';
 @use './screens/Home';
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
+
+@import '../assets/Chronology';
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
 
-//Components
-@import '../assets/Chronology';
 
 * {
   padding: 0;
@@ -19,9 +24,15 @@
 
 h1 {
   font-family: 'Cinzel', serif;
+
+}
+
+h2 {
+  font-family: 'Bebas Neue', cursive;
 }
 
 body {
+  overflow: hidden;
   background: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

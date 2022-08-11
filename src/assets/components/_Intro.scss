@@ -1,0 +1,113 @@
+.intro {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .cloudsContainer {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    
+    .cloud {
+      position: absolute;
+      height: fit-content;
+    }
+  }
+
+  .logo {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .gaetanFather {
+    position: absolute;
+    z-index: 100;
+
+    .gaetanMother {
+      position: relative; 
+
+      .gaetan {
+        position: absolute;
+        height: 200px;
+        z-index: -10;
+      }
+
+      #gaetan1 {
+        width: fit-content;
+        left: 50px;
+        top: -5px;
+      }
+
+      #gaetan2 {
+        width: fit-content;
+        height: 70px;
+        left: 70px;
+        top: 130px;
+      }
+
+      #gaetan2bis {
+        width: fit-content;
+        height: 70px;
+        left: 90px;
+        top: 130px;
+      }
+
+      #gaetan3 {
+        width: fit-content;
+        height: 90px;
+        left: 112px;
+        top: 130px;
+      }
+
+      #gaetan4 {
+        width: fit-content;
+        min-height: 600px;
+        left: 177px;
+        top: 210px;
+      }
+    }
+  }
+  
+  .title {
+    font-size: 8rem;
+    color: #fff;
+    // animation: neon 1.5s ease-in-out infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@keyframes neon {
+  from {
+    filter: 
+    drop-shadow(0 0 .5px #fff)
+    drop-shadow(0 0 1px #fff) 
+    drop-shadow(0 0 1.5px #fff)
+    drop-shadow(0 0 1px #B5179E)
+    drop-shadow(0 0 3px #B5179E)
+    drop-shadow(0 0 5px #B5179E)
+    drop-shadow(0 0 8px #B5179E)
+    drop-shadow(0 0 12px #B5179E);
+  }
+  to {
+    filter: 
+    drop-shadow(0 0 1px #fff)
+    drop-shadow(0 0 1.5px #fff)
+    drop-shadow(0 0 2px #fff)
+    drop-shadow(0 0 3px #B5179E)
+    drop-shadow(0 0 5px #B5179E)
+    drop-shadow(0 0 8px #B5179E)
+    drop-shadow(0 0 12px #B5179E)
+    drop-shadow(0 0 5px #B5179E);
+  }
+}
+
+h2 {
+  color: white;
+  height: fit-content;
+  width: fit-content;
+  font-size: 3rem;
+  position: absolute;
+}
