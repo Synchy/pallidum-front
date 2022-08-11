@@ -3,13 +3,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100vw;
+  height: 100vh;
   
   .cloudsContainer {
     width: 100vw;
     height: 100vh;
     z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
     
     .cloud {
+      width: 100vw;
+      height: 100vh;
       position: absolute;
       height: fit-content;
     }
@@ -20,17 +28,27 @@
     height: 100vh;
   }
 
-  .gaetan {
+  
+  .gaetanFather {
+    width: 100vw;
+    height: 100vh;
     position: absolute;
-    left: -520px;
-    top: 0;
-    z-index: -10;
+    z-index: 100;
+
+    .gaetan {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      z-index: -10;
+    }
   }
   
   .title {
+    width: 100vw;
+    height: 100vh;
     font-size: 8rem;
     color: #fff;
-    animation: neon 1.5s ease-in-out infinite alternate;
+    // animation: neon 1.5s ease-in-out infinite alternate;
     display: flex;
     justify-content: center;
     align-items: center;

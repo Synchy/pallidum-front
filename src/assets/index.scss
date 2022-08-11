@@ -1,14 +1,20 @@
 //Components
 @use './components/Intro';
+
 @use './components/stars';
 
+// @use './components/Event';
+@use './components/Chronology';
 
 //Screens
 @use './App';
 @use './screens/Home';
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
+
+
 
 * {
   padding: 0;
@@ -19,6 +25,11 @@
 
 h1 {
   font-family: 'Cinzel', serif;
+
+}
+
+h2 {
+  font-family: 'Bebas Neue', cursive;
 }
 
 h2 {
