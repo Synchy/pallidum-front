@@ -142,7 +142,6 @@ const Intro = () => {
       <motion.h2 variants={titleVariants} initial='initial' animate='visible4'>
         Voici votre salut
       </motion.h2>
-
       <div className='gaetanFather'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
