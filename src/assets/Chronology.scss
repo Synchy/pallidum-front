@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     padding: 100px 0;
+    position: relative;
  
  .timeline {
     width: 80%;
@@ -18,7 +19,6 @@
  }
 
  .timeline ul li {
-    padding: 20px;
     background-color: #1e1f22;
     color: white;
     border-radius: 30px; 
@@ -31,13 +31,21 @@
    font-size: 25px;
    font-weight: 500;
    line-height: 30px;
-   margin-bottom: 10px;
+   margin-bottom: 5px;
+   padding-left: 12px;
+   padding-top: 5px;
+   animation: neon 1.5s ease-in-out infinite alternate;
+  }
+
  }
 
  .timeline-content p{
    font-size: 16px;
    line-height: 30px;
    font-weight: 300;
+   width: 100%;
+   padding-left: 20px;
+   text-justify: auto;
  }
 
  .timeline-content .date {
@@ -45,20 +53,11 @@
   font-weight: 300;
   margin-bottom: 10px;
   letter-spacing: 2px;
+  padding-left: 15px;
 }
  }
- }
- 
- .timeline:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 100%;
-  background-color: gray;
-}
+
+
  .timeline ul li:nth-child(odd) {
   float: left;
   clear: right;
@@ -83,7 +82,7 @@
   position: absolute;
   height: 24px;
   width: 24px;
-  background-color: gray;
+  background-color:#7209B7;
   border-radius: 50%;
   top: 0;
 }
@@ -104,9 +103,34 @@
 }
 
 .timeline ul li:hover:after {
-  background-color: #4895EF
+  background-color: #F72585
 }
 
+.sly {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
 
+  .comete {
+    width: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+  }
+  }
+
+  
+  @keyframes neon {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #B5179E,
+        0 0 70px #B5179E, 0 0 80px #B5179E, 0 0 100px #B5179E, 0 0 150px #B5179E;
+    }
+    to {
+      text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 20px #B5179E,
+        0 0 35px #B5179E, 0 0 40px #B5179E, 0 0 50px #B5179E, 0 0 75px #B5179E;
+    }
+  }
 
 

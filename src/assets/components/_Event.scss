@@ -27,7 +27,7 @@ $black:#000;
     color: $black;
     font-weight: 500;
   }
-      .more-information {
+      .moreInformation {
         opacity: 1;
       }
     }
@@ -35,10 +35,9 @@ $black:#000;
 
 
 
-ul{
+.event-wrapper ul{
     display: flex;
     flex-wrap: wrap;
-
     list-style: none;
     padding: 0;
 
@@ -48,7 +47,7 @@ ul{
         display: flex;
         flex: 0 0 300px;
         flex-direction: column;
-        
+        background-color: grey;
         margin: 20px;
         margin-bottom: 30px;
         @include radius(10px);
@@ -168,7 +167,7 @@ ul{
       }
     }
     
-    .more-information {
+    .moreInformation {
       opacity: 0;
       
       transition: .3s;

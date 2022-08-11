@@ -1,6 +1,6 @@
 const Event = () => {
   return (
-    <div>
+    <div className='event-wrapper'>
       <ul>
         <li className='event-card'>
           <div className='event-container'>
@@ -9,7 +9,7 @@ const Event = () => {
             </div>
           </div>
           <div className='information-container'>
-            <h2 className='title'>PicNic géant dans un parc bucolique</h2>
+            {/* <h2 className='title'>PicNic géant dans un parc bucolique</h2> */}
             <p className='sub-title'></p>
             <p className='price'>
               {/* <svg
@@ -24,7 +24,7 @@ const Event = () => {
               </svg> */}
               De 0 à 15 €
             </p>
-            <div className='more-information'>
+            <div className='moreInformation'>
               <div className='info-and-date-container'>
                 <div className='box info'>
                   {/* <svg
@@ -40,12 +40,12 @@ const Event = () => {
                   <p>Parc des expositions à NANTES</p>
                 </div>
                 <div className='box date'>
-                  <svg className='icon' viewBox='0 0 24 24'>
+                  {/* <svg className='icon' viewBox='0 0 24 24'>
                     <path
                       fill='currentColor'
                       d='M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z'
                     />
-                  </svg>
+                  </svg> */}
                   <p>Samedi 13 août 2022</p>
                 </div>
               </div>
