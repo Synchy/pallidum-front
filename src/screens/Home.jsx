@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 
 import Intro from '../components/Intro'
+import Event from '../components/Event'
 
 const Home = () => {
   return (
