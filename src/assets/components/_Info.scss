@@ -1,0 +1,17 @@
+.info {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  .gontranFather {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+
+    .gontran {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+    }
+  }
+}

@@ -40,6 +40,7 @@ const titleVariants = {
 const cloudVariants = {
   awayRight: {
     x: ['100vw', '20vw'],
+    scale: 1.5,
     transition: { ease: 'easeInOut', yoyo: 7, duration: 3, times: [0.1, 0.9] }
   },
   awayLeft: {
@@ -51,10 +52,10 @@ const cloudVariants = {
 const pathVariants = {
   hidden: {
     pathLength: 0,
-    opacity: 0
+    visibility: 'hidden'
   },
   visible1: {
-    opacity: 1,
+    visibility: 'visible',
     pathLength: 1,
     transition: {
       ease: 'easeInOut',
@@ -63,16 +64,7 @@ const pathVariants = {
     }
   },
   visible2: {
-    opacity: 1,
-    pathLength: 1,
-    transition: {
-      ease: 'easeInOut',
-      duration: 1,
-      delay: 24.5
-    }
-  },
-  visible3: {
-    opacity: 1,
+    visibility: 'visible',
     pathLength: 1,
     transition: {
       ease: 'easeInOut',
@@ -80,14 +72,22 @@ const pathVariants = {
       delay: 25
     }
   },
+  visible3: {
+    visibility: 'visible',
+    pathLength: 1,
+    transition: {
+      ease: 'easeInOut',
+      duration: 1,
+      delay: 25.5
+    }
+  },
   visible4: {
-    opacity: [0, 1],
+    visibility: 'visible',
     pathLength: 1,
     transition: {
       ease: 'easeInOut',
       duration: 6,
-      times: [0.2, 0.8],
-      delay: 24.2
+      delay: 26
     }
   }
 }
