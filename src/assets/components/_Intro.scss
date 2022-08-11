@@ -3,13 +3,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100vw;
+  height: 100vh;
   
   .cloudsContainer {
     width: 100vw;
     height: 100vh;
     z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
     
     .cloud {
+      width: 100vw;
+      height: 100vh;
       position: absolute;
       height: fit-content;
     }
@@ -20,56 +28,24 @@
     height: 100vh;
   }
 
+  
   .gaetanFather {
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     z-index: 100;
 
-    .gaetanMother {
-      position: relative; 
-
-      .gaetan {
-        position: absolute;
-        height: 200px;
-        z-index: -10;
-      }
-
-      #gaetan1 {
-        width: fit-content;
-        left: 50px;
-        top: -5px;
-      }
-
-      #gaetan2 {
-        width: fit-content;
-        height: 70px;
-        left: 70px;
-        top: 130px;
-      }
-
-      #gaetan2bis {
-        width: fit-content;
-        height: 70px;
-        left: 90px;
-        top: 130px;
-      }
-
-      #gaetan3 {
-        width: fit-content;
-        height: 90px;
-        left: 112px;
-        top: 130px;
-      }
-
-      #gaetan4 {
-        width: fit-content;
-        min-height: 600px;
-        left: 177px;
-        top: 210px;
-      }
+    .gaetan {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      z-index: -10;
     }
   }
   
   .title {
+    width: 100vw;
+    height: 100vh;
     font-size: 8rem;
     color: #fff;
     // animation: neon 1.5s ease-in-out infinite alternate;
