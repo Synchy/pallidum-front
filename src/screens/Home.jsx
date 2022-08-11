@@ -1,10 +1,20 @@
+import { Routes, Route } from 'react-router-dom'
+
 import Intro from '../components/Intro'
 import Event from '../components/Event'
 
 const Home = () => {
   return (
     <div className='Home'>
-      <Intro />
+      <Routes>
+        <Route path='/' element={<Intro />} />
+        {/* <Route path='/info' element={<Info />} />
+        <Route path='/chronologie' element={<Chronology />} />
+  <Route path='/stars' element={<Stars />} /> */}
+
+        <Route path='/evenements' element={<Event />} />
+        {/* <Route path='/inscription' element={<UserForm />} /> */}
+      </Routes>
     </div>
   )
 }
