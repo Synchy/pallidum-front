@@ -1,7 +1,9 @@
+import Intro from '../components/Intro'
+
 const Home = () => {
   return (
     <div className='Home'>
-      <h1>Pallidum</h1>
+      <Intro />
     </div>
   )
 }
