@@ -10,9 +10,10 @@ const Home = () => {
         <Route path='/' element={<Intro />} />
         {/* <Route path='/info' element={<Info />} />
         <Route path='/chronologie' element={<Chronology />} />
-        <Route path='/stars' element={<Stars />} />
+  <Route path='/stars' element={<Stars />} /> */}
+
         <Route path='/evenements' element={<Event />} />
-        <Route path='/inscription' element={<UserForm />} /> */}
+        {/* <Route path='/inscription' element={<UserForm />} /> */}
       </Routes>
     </div>
   )
