@@ -28,9 +28,9 @@
 }
 
 .rightContainer {
+  padding-top: 4rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: flex-start;
   height: 800px;
   width: 800px;
@@ -81,15 +81,13 @@
 
     li {
         position: relative;
-        &:after {
-          content: "";
-          position: absolute;
+        cursor: pointer;
           width: 32px;
           height: 32px;
           opacity: 1;
           background: #fff38a;
           border-radius: 50%;
-        }
+        
         
       }
   }
