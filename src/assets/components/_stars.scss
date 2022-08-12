@@ -1,6 +1,7 @@
 .stars {
   height: 100vh;
   display: flex;
+  height: 100vh;
   flex-direction: column;
   align-items: center;
   position: relative;
@@ -60,6 +61,7 @@
     img {
       height: 450px;
       width: 400px;
+      border-radius: 1rem;
     }
     .years {
       width: 100%;

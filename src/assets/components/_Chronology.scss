@@ -24,7 +24,7 @@
       bottom: 0;
       left: 0;
     }
- 
+  }
  .timeline {
     width: 80%;
     height: auto; 
@@ -50,10 +50,9 @@
    font-size: 25px;
    font-weight: 500;
    line-height: 30px;
-   margin-bottom: 5px;
    padding-left: 15px;
    padding-top: 15px;
-   animation: neon 1.5s ease-in-out infinite alternate;
+   color:#B5179E;
   }
 
  }
@@ -63,18 +62,18 @@
    line-height: 30px;
    font-weight: 300;
    width: 100%;
-   padding: 20px;
+   padding: 5px 20px;
    text-justify: auto;
  }
 
- .timeline-content .date {
+ .timeline-content .date1 {
   font-size: 12px;
   font-weight: 300;
   margin-bottom: 10px;
   letter-spacing: 2px;
   padding-left: 15px;
 }
- }
+
 
 
  .timeline ul li:nth-child(odd) {
@@ -90,8 +89,9 @@
   clear: left;
   transform: translate(20px);
   border-top-left-radius: 0%;
-  box-shadow: 2.6px 5.8px 9.6px rgba(111, 110, 110, 0.193);
+  box-shadow: -2.6px 5.8px 9.6px rgba(111, 110, 110, 0.193);
 }
+
  .timeline ul li:last-child{
    margin-bottom: 0;
  }
@@ -116,7 +116,7 @@
   left: -20px;
 }
 
-.timeline-content .date {
+.timeline-content  h3 {
   position: absolute;
   top: -20px;
 }
@@ -139,17 +139,3 @@
     height: 100%;
   }
   }
-
-  
-  @keyframes neon {
-    from {
-      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #B5179E,
-        0 0 70px #B5179E, 0 0 80px #B5179E, 0 0 100px #B5179E, 0 0 150px #B5179E;
-    }
-    to {
-      text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 20px #B5179E,
-        0 0 35px #B5179E, 0 0 40px #B5179E, 0 0 50px #B5179E, 0 0 75px #B5179E;
-    }
-  }
-
-

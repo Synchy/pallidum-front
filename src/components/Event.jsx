@@ -1,64 +1,150 @@
 import { Link } from 'react-router-dom'
 const Event = () => {
   return (
-    <div className='event-wrapper'>
-      <ul>
-        <li className='event-card'>
-          <div className='event-container'>
-            <div className='content'>
-              <button className='btn'>Réserver</button>
-            </div>
+    <div className='box-wrap'>
+      <div className='box'>
+        <div className='container1'>
+          <div className='reserve'>
+            <button>
+              {' '}
+              <span>Reserver</span>
+            </button>
           </div>
-          <div className='information-container'>
-            {/* <h2 className='title'>PicNic géant dans un parc bucolique</h2> */}
-            <p className='sub-title'></p>
-            <p className='price'>
-              {/* <svg
-                className='icon'
-                style='width:24px;height:24px'
-                viewBox='0 0 24 24'
-              >
-                <path
-                  fill='currentColor'
-                  d='M3,6H21V18H3V6M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M7,8A2,2 0 0,1 5,10V14A2,2 0 0,1 7,16H17A2,2 0 0,1 19,14V10A2,2 0 0,1 17,8H7Z'
-                />
-              </svg> */}
-              De 0 à 15 €
+          <div className='describe'>
+            <h2>Pic Nique bucolique</h2>
+            <br></br>
+            <p>
+              Venez rencontrer d'autres fidèles autour d'un bon pic et nique.
+              Profiter de diverses activités physique en pleine nature pour vous
+              ressourcer avec Mère Nature.{' '}
             </p>
-            <div className='moreInformation'>
-              <div className='info-and-date-container'>
-                <div className='box info'>
-                  {/* <svg
-                    className='icon'
-                    style='width:24px;height:24px'
-                    viewBox='0 0 24 24'
-                  >
-                    <path
-                      fill='currentColor'
-                      d='M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z'
-                    />
-                  </svg> */}
-                  <p>Parc des expositions à NANTES</p>
-                </div>
-                <div className='box date'>
-                  {/* <svg className='icon' viewBox='0 0 24 24'>
-                    <path
-                      fill='currentColor'
-                      d='M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z'
-                    />
-                  </svg> */}
-                  <p>Samedi 13 août 2022</p>
-                </div>
-              </div>
-              <p className='disclaimer'>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
-                eveniet perferendis culpa. Expedita architecto nesciunt, rem
-                distinctio
-              </p>
+          </div>
+          <div className='info-describe'>
+            <div className='dates'>
+              <p>Vendredi 12 aoôut 2022</p>
+            </div>
+
+            <div className='place'>
+              <p>Parc du Grand Blottereau, Nantes</p>
             </div>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
+
+      <div className='box'>
+        <div className='container1'>
+          <div className='reserve'>
+            <button>
+              {' '}
+              <span>Reserver</span>
+            </button>
+          </div>
+          <div className='describe'>
+            <h2>La Soirée Deguisée</h2>
+            <br></br>
+            <br></br>
+            <p>
+              Déguisez-vous en ce que vous voulez et profiter de diverses
+              activités physique ainsi des différentes personnes.
+            </p>
+          </div>
+          <div className='info-describe'>
+            <div className='dates'>
+              <p>Samedi 20 aoôut 2022</p>
+            </div>
+
+            <div className='place'>
+              <p>Le Diamant, Paris</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='box'>
+        <div className='container1'>
+          <div className='reserve'>
+            <button>
+              {' '}
+              <span>Reserver</span>
+            </button>
+          </div>
+          <div className='describe'>
+            <h2>Festival de Romain</h2>
+            <br></br>
+            <br></br>
+            <p>
+              Venez profiter de divers artistes de variétés et de leurs
+              maginifique musiques tout cela dans une ambiance digne du
+              Pallidum.{' '}
+            </p>
+          </div>
+          <div className='info-describe'>
+            <div className='dates'>
+              <p>Vendredi 27 août 2022</p>
+            </div>
+
+            <div className='place'>
+              <p>Chez Romain</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='box'>
+        <div className='container1'>
+          <div className='reserve'>
+            <button>
+              {' '}
+              <span>Reserver</span>
+            </button>
+          </div>
+          <div className='describe'>
+            <h2>Love Speak Dating</h2>
+            <br></br>
+            <br></br>
+            <p>
+              Venez rencontrer d'autres fidèles dans un bar tendance. Peut-être
+              que vous rencontrerez le ou la fidèle de votre vie.{' '}
+            </p>
+          </div>
+          <div className='info-describe'>
+            <div className='dates'>
+              <p>Vendredi 2 septembre 2022</p>
+            </div>
+
+            <div className='place'>
+              <p>Le Bibelot, Paris</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='box'>
+        <div className='container1'>
+          <div className='reserve'>
+            <button>
+              {' '}
+              <span>Reserver</span>
+            </button>
+          </div>
+          <div className='describe'>
+            <h2>BrunchX Dimanche</h2>
+            <br></br>
+            <br></br>
+            <p>
+              Profitez d'une mâtinée brunch pour vous amuser tout en mangeant.
+              Et pourquoi pas commencer par le dessert.
+            </p>
+          </div>
+          <div className='info-describe'>
+            <div className='dates'>
+              <p>Dimanche 4 septembre 2022</p>
+            </div>
+
+            <div className='place'>
+              <p>Parc de Nantes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <Link to='/stars'>
         <div className='back'></div>
       </Link>
