@@ -16,7 +16,9 @@ const Event = () => {
             <p>
               Venez rencontrer d'autres fidèles autour d'un bon pic et nique.
               Profiter de diverses activités physique en pleine nature pour vous
-              ressourcer avec Mère Nature.{' '}
+              ressourcer avec Mère Nature.
+              <br /> <br />
+              En clôture : une orgie.{' '}
             </p>
           </div>
           <div className='info-describe'>
@@ -45,7 +47,8 @@ const Event = () => {
             <br></br>
             <p>
               Déguisez-vous en ce que vous voulez et profiter de diverses
-              activités physique ainsi des différentes personnes.
+              activités physique ainsi des différentes personnes. <br /> <br />
+              En clôture : une orgie.
             </p>
           </div>
           <div className='info-describe'>
@@ -74,7 +77,8 @@ const Event = () => {
             <p>
               Venez profiter de divers artistes de variétés et de leurs
               maginifique musiques tout cela dans une ambiance digne du
-              Pallidum.{' '}
+              Pallidum. <br /> <br />
+              En clôture : une orgie.{' '}
             </p>
           </div>
           <div className='info-describe'>
@@ -102,7 +106,8 @@ const Event = () => {
             <br></br>
             <p>
               Venez rencontrer d'autres fidèles dans un bar tendance. Peut-être
-              que vous rencontrerez le ou la fidèle de votre vie.{' '}
+              que vous rencontrerez le ou la fidèle de votre vie. <br /> <br />
+              En clôture : une orgie.{' '}
             </p>
           </div>
           <div className='info-describe'>
@@ -130,7 +135,8 @@ const Event = () => {
             <br></br>
             <p>
               Profitez d'une mâtinée brunch pour vous amuser tout en mangeant.
-              Et pourquoi pas commencer par le dessert.
+              Et pourquoi pas commencer par le dessert. <br /> <br />
+              En clôture : une orgie.
             </p>
           </div>
           <div className='info-describe'>

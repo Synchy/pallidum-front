@@ -175,8 +175,8 @@ const Info = () => {
           <p className='infoDescription'>
             Fidèle à lui-même, l'humain a cherché à détruire ce qui est bon pour
             lui. La très Sainte Église de Pallidum rétablit la vérité quant à
-            l'existe de Saint Pallidum et la nature de son cadeau. Le monde est
-            au bord de la destruction.
+            l'existence de Saint Pallidum et la nature de son cadeau. Le monde
+            est au bord de la destruction.
             <br />
             <br />
             La Bienveillante Syphilis nous permet de contenir la population
