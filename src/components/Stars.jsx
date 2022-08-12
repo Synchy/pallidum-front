@@ -53,22 +53,22 @@ const Stars = () => {
     bump0: {
       y: '-50px',
       background: '#3A0CA3',
-      transition: { type: 'spring', stiffness: 200, duration: 1, delay: 5 }
+      transition: { type: 'spring', stiffness: 200, duration: 1, delay: 4.84 }
     },
     bump1: {
       y: '-50px',
       background: '#3A0CA3',
-      transition: { type: 'spring', stiffness: 200, duration: 1, delay: 5.4 }
+      transition: { type: 'spring', stiffness: 200, duration: 1, delay: 5.15 }
     },
     bump2: {
       y: '-50px',
       background: '#3A0CA3',
-      transition: { type: 'spring', stiffness: 200, duration: 1, delay: 5.7 }
+      transition: { type: 'spring', stiffness: 200, duration: 1, delay: 5.5 }
     },
     bump3: {
       y: '-50px',
       background: '#3A0CA3',
-      transition: { type: 'spring', stiffness: 200, duration: 1, delay: 6.1 }
+      transition: { type: 'spring', stiffness: 200, duration: 1, delay: 5.9 }
     },
     mover: {
       scale: 1.2

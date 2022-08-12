@@ -141,7 +141,7 @@ const Info = () => {
           id='info1'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 2, delay: 3.5 }}
+          transition={{ duration: 2, delay: 3.2 }}
         >
           <h2 className='infoTitle'>L'amour est notre arme</h2>
           <p className='infoDescription'>
@@ -154,7 +154,7 @@ const Info = () => {
           id='info2'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 2, delay: 2.8 }}
+          transition={{ duration: 2, delay: 2.5 }}
         >
           <h2 className='infoTitle'>Le très Saint Pallidum</h2>
           <p className='infoDescription'>
@@ -169,7 +169,7 @@ const Info = () => {
           id='info3'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 2, delay: 4.2 }}
+          transition={{ duration: 2, delay: 3.8 }}
         >
           <h2 className='infoTitle'>#JeSuisSiphylis</h2>
           <p className='infoDescription'>

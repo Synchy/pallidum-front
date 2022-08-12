@@ -31,7 +31,7 @@
     max-width: 800px;
     margin: 0 auto;
     position: relative;
- }    
+ }
 
  .timeline ul {
     list-style: none;
@@ -45,6 +45,10 @@
     width: 50%;
     position: relative;
     transform: translateX(30px);
+
+    .timeline-content {
+      padding: 5px;
+    }
 
  .timeline-content h1 {
    font-size: 25px;
@@ -64,6 +68,7 @@
    width: 100%;
    padding: 5px 20px;
    text-justify: auto;
+   padding-bottom: 10px;
  }
 
  .timeline-content .date1 {

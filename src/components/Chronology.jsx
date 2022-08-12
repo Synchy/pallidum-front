@@ -11,35 +11,35 @@ const Chronology = () => {
       opacity: 1,
       transition: {
         duration: 0.8,
-        delay: 0.5
+        delay: 0.8
       }
     },
     card2: {
       opacity: 1,
       transition: {
         duration: 0.8,
-        delay: 1.9
+        delay: 1.65
       }
     },
     card3: {
       opacity: 1,
       transition: {
         duration: 0.8,
-        delay: 2.4
+        delay: 2.15
       }
     },
     card4: {
       opacity: 1,
       transition: {
         duration: 0.8,
-        delay: 3.1
+        delay: 2.8
       }
     }
   }
 
   return (
-    <>
-      <motion.div className='sly' variants={exitVariants} exit='exit'>
+    <motion.div variants={exitVariants} exit='exit'>
+      <div className='sly'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 10 998'
@@ -73,7 +73,7 @@ const Chronology = () => {
             />
           </g>
         </svg>
-      </motion.div>
+      </div>
       <div className='container'>
         <div className='timeline'>
           <ul>
@@ -137,7 +137,7 @@ const Chronology = () => {
           <div className='next'></div>
         </Link>
       </div>
-    </>
+    </motion.div>
   )
 }
 export default Chronology
