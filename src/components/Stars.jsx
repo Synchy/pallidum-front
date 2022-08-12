@@ -1,7 +1,7 @@
 import img1 from '../assets/img/guyMaupassant.jpg'
 import img2 from '../assets/img/endreArdy.jpg'
 import img3 from '../assets/img/rachelBeer.jpg'
-import arrow from '../assets/img/arrow.svg'
+
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
@@ -17,16 +17,8 @@ const Stars = () => {
   const images = [img1, img2, img3]
 
   const [position, setPosition] = useState(0)
-
-  const transTilte = {
-    awayRight: {
-      x: ['100vw', '20vw'],
-      transition: { ease: 'easeInOut', yoyo: 7, duration: 3, times: [0.1, 0.9] }
-    },
-    awayLeft: {
-      x: ['-100vw', '-20vw'],
-      transition: { ease: 'easeInOut', yoyo: 7, duration: 3, times: [0.1, 0.9] }
-    }
+  const exitVariants = {
+    exit: { y: '-100vh', transition: { ease: 'easeInOut' } }
   }
 
   // const next = () => {
@@ -36,19 +28,47 @@ const Stars = () => {
   //   setPosition(para => para - 1)
   // }
   return (
-    <div className='stars'>
+    <motion.div className='stars' variants={exitVariants} exit='exit'>
       <div className='starContainer'>
         <div className='leftContainer'>
-          <img src={images[position]} alt='img' />
-          <div className='years'>
+          <motion.img
+            src={images[position]}
+            alt='img'
+            initial={{ y: '-100vh' }}
+            animate={{ y: 0 }}
+            transition={{ type: 'spring', stiffness: 50 }}
+          />
+
+          <motion.div
+            className='years'
+            initial={{ x: '-100vw' }}
+            animate={{ x: 0 }}
+            transition={{ type: 'spring', stiffness: 50 }}
+          >
             <h2>{years[position]}</h2>
-          </div>
+          </motion.div>
         </div>
         <div className='rightContainer'>
-          <div className='tiltes'>
+          <motion.div
+            className='tiltes'
+            initial={{ x: '100vh' }}
+            animate={{ x: 0 }}
+            transition={{ type: 'spring', stiffness: 50, delay: 0.25 }}
+          >
             <h2>{tiltes[position]}</h2>
-          </div>
-          <div className='text'>{texts[position]}</div>
+          </motion.div>
+          <motion.div
+            className='text'
+            initial={{ y: '100vw' }}
+            animate={{ y: 0 }}
+            transition={{
+              type: 'spring',
+              stiffness: 50,
+              delay: 0.5
+            }}
+          >
+            {texts[position]}
+          </motion.div>
         </div>
       </div>
       <div className='navStars'>
@@ -72,7 +92,7 @@ const Stars = () => {
       <Link to='/evenements'>
         <div className='next'></div>
       </Link>
-    </div>
+    </motion.div>
   )
 }
 
