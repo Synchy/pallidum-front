@@ -2,7 +2,9 @@ import syphilisMouth from '../assets/img/syphilismouth.jpg'
 
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-
+const exitVariants = {
+  exit: { y: '-100vh', transition: { ease: 'easeInOut' } }
+}
 const Info = () => {
   const pathVariants = {
     hidden: {
@@ -38,7 +40,7 @@ const Info = () => {
   }
 
   return (
-    <div className='info'>
+    <motion.div className='info' variants={exitVariants} exit='exit'>
       <div className='gontranFather'>
         <svg
           className='gontran'
@@ -124,6 +126,7 @@ const Info = () => {
           <div className='next'></div>
         </Link>
       </div>
+
       <div className='infoContent'>
         <motion.div
           id='info1'
@@ -190,7 +193,7 @@ const Info = () => {
           />
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
