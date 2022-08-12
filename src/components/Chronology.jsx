@@ -2,6 +2,9 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
 const Chronology = () => {
+  const exitVariants = {
+    exit: { y: '-100vh', transition: { ease: 'easeInOut' } }
+  }
   const onOff = {
     hidden: { opacity: 0 },
     card1: {
@@ -36,7 +39,7 @@ const Chronology = () => {
 
   return (
     <>
-      <div className='sly'>
+      <motion.div className='sly' variants={exitVariants} exit='exit'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 10 998'
@@ -70,7 +73,7 @@ const Chronology = () => {
             />
           </g>
         </svg>
-      </div>
+      </motion.div>
       <div className='container'>
         <div className='timeline'>
           <ul>

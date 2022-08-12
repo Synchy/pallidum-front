@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom'
 
 import cloud1 from '../assets/img/Syphilis4.png'
 import cloud2 from '../assets/img/Syphilis3.png'
-
+const exitVariants = {
+  exit: { y: '-100vh', transition: { ease: 'easeInOut' } }
+}
 const titleVariants = {
   initial: {
     opacity: 0
@@ -95,7 +97,7 @@ const pathVariants = {
 
 const Intro = () => {
   return (
-    <div className='intro'>
+    <motion.div className='intro' variants={exitVariants} exit='exit'>
       <div className='cloudsContainer'>
         <motion.img
           src={cloud1}
@@ -219,7 +221,7 @@ const Intro = () => {
           <div className='next'></div>
         </Link>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

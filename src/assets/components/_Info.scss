@@ -11,7 +11,8 @@
   }
 
   .back{
-    z-index: 50;
+      cursor: default;
+      z-index: 50;
       width: 100vw;
       height: 50px;
       position: absolute;
@@ -20,6 +21,7 @@
   }
 
   .next{
+      cursor: default;
       z-index: 50;
       width: 100vw;
       height: 50px;

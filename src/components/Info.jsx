@@ -2,7 +2,9 @@ import syphilisMouth from '../assets/img/syphilismouth.jpg'
 
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-
+const exitVariants = {
+  exit: { y: '-100vh', transition: { ease: 'easeInOut' } }
+}
 const Info = () => {
   const pathVariants = {
     hidden: {
@@ -48,7 +50,7 @@ const Info = () => {
   }
 
   return (
-    <div className='info'>
+    <motion.div className='info' variants={exitVariants} exit='exit'>
       <div className='gontranFather'>
         <svg
           className='gontran'
@@ -134,7 +136,7 @@ const Info = () => {
           <div className='next'></div>
         </Link>
       </div>
-      <motion.div className='infoContent'>
+      <div className='infoContent'>
         <motion.div
           id='info1'
           initial={{ opacity: 0 }}
@@ -198,8 +200,20 @@ const Info = () => {
             transition={{ delay: 5.5 }}
           />
           <motion.div id='info4' variants={bouger}>
-            <h2 className='infoTitle'>La marque des élus</h2>
-            <p className='infoDescription'>
+            <motion.h2
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 6 }}
+              className='infoTitle'
+            >
+              La marque des élus
+            </motion.h2>
+            <motion.p
+              className='infoDescription'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 6 }}
+            >
               Ceux et celles qui ont été touchés par la grâce sont
               reconnaissables entre mille, car Saint Pallidum dépose ses baisers
               sur leur peau.
@@ -209,11 +223,11 @@ const Info = () => {
               d'Attouchement de Saint Pallidum, purgeront le monde en lui
               accordant la rédemption, cependant que jaillira la purification
               des élus.
-            </p>
+            </motion.p>
           </motion.div>
         </motion.div>
-      </motion.div>
-    </div>
+      </div>
+    </motion.div>
   )
 }
 

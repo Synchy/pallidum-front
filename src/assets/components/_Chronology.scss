@@ -7,6 +7,7 @@
     padding: 75px 0;
     position: relative;
     .back{
+      cursor: default;
       z-index: 50;
       width: 100vw;
       height: 50px;
@@ -15,6 +16,7 @@
       left: 0;
     }
     .next{
+      cursor: default;
       z-index: 50;
       width: 100vw;
       height: 50px;
@@ -51,7 +53,7 @@
    margin-bottom: 5px;
    padding-left: 15px;
    padding-top: 15px;
-  //  animation: neon 1.5s ease-in-out infinite alternate;
+   animation: neon 1.5s ease-in-out infinite alternate;
   }
 
  }

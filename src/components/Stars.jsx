@@ -1,7 +1,7 @@
 import img1 from '../assets/img/guyMaupassant.jpg'
 import img2 from '../assets/img/endreArdy.jpg'
 import img3 from '../assets/img/rachelBeer.jpg'
-import arrow from '../assets/img/arrow.svg'
+
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
@@ -17,16 +17,8 @@ const Stars = () => {
   const images = [img1, img2, img3]
 
   const [position, setPosition] = useState(0)
-
-  const transTilte = {
-    awayRight: {
-      x: ['100vw', '20vw'],
-      transition: { ease: 'easeInOut', yoyo: 7, duration: 3, times: [0.1, 0.9] }
-    },
-    awayLeft: {
-      x: ['-100vw', '-20vw'],
-      transition: { ease: 'easeInOut', yoyo: 7, duration: 3, times: [0.1, 0.9] }
-    }
+  const exitVariants = {
+    exit: { y: '-100vh', transition: { ease: 'easeInOut' } }
   }
 
   // const next = () => {
@@ -65,9 +57,28 @@ const Stars = () => {
       scale: 1.2
     }
   }
+  const slideLeft = {
+    init: { x: '-100vw' },
+    pop: {
+      x: 0,
+      transition: { type: 'spring', stiffness: 50, delay: 0.5 }
+    }
+  }
+  const slideRight = {
+    init: { x: '100vw' },
+    pop: {
+      x: 0,
+      transition: { type: 'spring', stiffness: 50, delay: 0.7 }
+    }
+  }
+
+  // const [anim, setAnim] = useState(false)
+  // const click1 = () => {
+  //   setPosition(1) && setAnim(anim)
+  // }
 
   return (
-    <div className='stars'>
+    <motion.div className='stars' variants={exitVariants} exit='exit'>
       <div className='anemoneMother'>
         <svg
           className='anemone'
@@ -108,21 +119,51 @@ const Stars = () => {
           </g>
         </svg>
       </div>
+
       <div className='starContainer'>
-        <h1 className='martyrsTitle'>Nos meilleurs martyrs</h1>
+        <motion.h1
+          className='martyrsTitle'
+          variants={slideRight}
+          initial='init'
+          animate='pop'
+        >
+          Nos meilleurs martyrs
+        </motion.h1>
         <div className='leftContainer'>
-          <img src={images[position]} alt='img' />
-          <div className='years'>
+          <motion.img
+            src={images[position]}
+            alt='img'
+            variants={slideLeft}
+            initial='init'
+            animate='pop'
+          />
+
+          <motion.div
+            className='years'
+            variants={slideLeft}
+            initial='init'
+            animate='pop'
+          >
             <h2>{years[position]}</h2>
-          </div>
+          </motion.div>
         </div>
         <div className='rightContainer'>
-          <div className='tiltes'>
+          <motion.div
+            className='tiltes'
+            variants={slideRight}
+            initial='init'
+            animate='pop'
+          >
             <h2>{tiltes[position]}</h2>
-          </div>
-          <div className='text'>
-            <p>{texts[position]}</p>
-          </div>
+          </motion.div>
+          <motion.div
+            className='text'
+            variants={slideRight}
+            initial='init'
+            animate='pop'
+          >
+            {texts[position]}
+          </motion.div>
         </div>
       </div>
       <div className='navStars'>
@@ -161,7 +202,7 @@ const Stars = () => {
       <Link to='/evenements'>
         <div className='next'></div>
       </Link>
-    </div>
+    </motion.div>
   )
 }
 
