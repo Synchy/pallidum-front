@@ -3,6 +3,10 @@
   height: 100vh;
   position: relative;
 
+  h2, p {
+    color: white;
+  }
+
   .gontranFather {
     width: 100vw;
     height: 100vh;
@@ -13,5 +17,74 @@
       height: 100vh;
       position: absolute;
     }
+  }
+
+  .infoContent {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    .infoTitle {
+      font-size: 1.4rem;
+    }
+
+    #info1 {
+      position: absolute;
+      width: 250px;
+      top: 120px;
+      left: 330px;
+
+      p {
+        position: absolute;
+        top: 40px;
+        text-align: justify;
+      }
+    }
+
+    #info2 {
+      position: absolute;
+      width: 250px;
+      top: 120px;
+      left: 700px;
+
+      p {
+        position: absolute;
+        top: 40px;
+        text-align: justify;
+      }
+    }
+
+    #info3 {
+      position: absolute;
+      width: 250px;
+      bottom: 500px;
+      left: 330px;
+
+      p {
+        position: absolute;
+        top: 40px;
+        text-align: justify;
+      }
+    }
+
+    #info4 {
+      position: absolute;
+      width: 250px;
+      bottom: 500px;
+      right: 330px;
+
+      p {
+        position: absolute;
+        top: 40px;
+        text-align: justify;
+      }
+    }
+    
+      .syphiMouth {
+        width: 400px;
+        position: absolute;
+        right: 300px;
+        top: 370px;
+      }
   }
 }

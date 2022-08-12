@@ -1,3 +1,5 @@
+import syphilisMouth from '../assets/img/syphilismouth.jpg'
+
 import { motion } from 'framer-motion'
 
 const Info = () => {
@@ -114,6 +116,72 @@ const Info = () => {
             </g>
           </g>
         </svg>
+      </div>
+      <div className='infoContent'>
+        <motion.div
+          id='info1'
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 3.5 }}
+        >
+          <h2 className='infoTitle'>Coucou</h2>
+          <p className='infoDescription'>
+            Jujubes jelly beans cake cupcake tart muffin. Sweet roll pastry
+            pudding ice cream sesame snaps carrot cake oat cake. Danish macaroon
+            sesame snaps topping apple pie donut. Dessert candy canes oat cake
+            macaroon lollipop pie.
+          </p>
+        </motion.div>
+        <motion.div
+          id='info2'
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 2.8 }}
+        >
+          <h2 className='infoTitle'>Coucou</h2>
+          <p className='infoDescription'>
+            Jujubes jelly beans cake cupcake tart muffin. Sweet roll pastry
+            pudding ice cream sesame snaps carrot cake oat cake. Danish macaroon
+            sesame snaps topping apple pie donut. Dessert candy canes oat cake
+            macaroon lollipop pie.
+          </p>
+        </motion.div>
+        <motion.div
+          id='info3'
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 4.2 }}
+        >
+          <h2 className='infoTitle'>Kikou</h2>
+          <p className='infoDescription'>
+            Jujubes jelly beans cake cupcake tart muffin. Sweet roll pastry
+            pudding ice cream sesame snaps carrot cake oat cake. Danish macaroon
+            sesame snaps topping apple pie donut. Dessert candy canes oat cake
+            macaroon lollipop pie. Jujubes jelly beans cake cupcake tart muffin.
+            Sweet roll pastry pudding ice cream sesame snaps carrot cake oat
+            cake. Danish macaroon sesame snaps topping apple pie donut. Dessert
+            candy canes oat cake macaroon lollipop pie.
+          </p>
+        </motion.div>
+        <motion.div id='moveText'>
+          <motion.div id='info4'>
+            <h2 className='infoTitle'>La marque des élus</h2>
+            <p className='infoDescription'>
+              Jujubes jelly beans cake cupcake tart muffin. Sweet roll pastry
+              pudding ice cream sesame snaps carrot cake oat cake. Danish
+              macaroon sesame snaps topping apple pie donut. Dessert candy canes
+              oat cake macaroon lollipop pie. Jujubes jelly beans cake cupcake
+              tart muffin. Sweet roll pastry pudding ice cream sesame snaps
+              carrot cake oat cake. Danish macaroon sesame snaps topping apple
+              pie donut. Dessert candy canes oat cake macaroon lollipop pie.
+            </p>
+          </motion.div>
+          <img
+            src={syphilisMouth}
+            className='syphiMouth'
+            alt='Symptôme syphilis bouche'
+          />
+        </motion.div>
       </div>
     </div>
   )
