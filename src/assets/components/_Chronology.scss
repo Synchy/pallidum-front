@@ -7,6 +7,7 @@
     padding: 75px 0;
     position: relative;
     .back{
+      cursor: default;
       z-index: 50;
       width: 100vw;
       height: 50px;
@@ -15,6 +16,7 @@
       left: 0;
     }
     .next{
+      cursor: default;
       z-index: 50;
       width: 100vw;
       height: 50px;

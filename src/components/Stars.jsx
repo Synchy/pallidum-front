@@ -57,6 +57,25 @@ const Stars = () => {
       scale: 1.2
     }
   }
+  const slideLeft = {
+    init: { x: '-100vw' },
+    pop: {
+      x: 0,
+      transition: { type: 'spring', stiffness: 50, delay: 0.5 }
+    }
+  }
+  const slideRight = {
+    init: { x: '100vw' },
+    pop: {
+      x: 0,
+      transition: { type: 'spring', stiffness: 50, delay: 0.7 }
+    }
+  }
+
+  // const [anim, setAnim] = useState(false)
+  // const click1 = () => {
+  //   setPosition(1) && setAnim(anim)
+  // }
 
   return (
     <motion.div className='stars' variants={exitVariants} exit='exit'>
@@ -102,21 +121,28 @@ const Stars = () => {
       </div>
 
       <div className='starContainer'>
-        <h1 className='martyrsTitle'>Nos meilleurs martyrs</h1>
+        <motion.h1
+          className='martyrsTitle'
+          variants={slideRight}
+          initial='init'
+          animate='pop'
+        >
+          Nos meilleurs martyrs
+        </motion.h1>
         <div className='leftContainer'>
           <motion.img
             src={images[position]}
             alt='img'
-            initial={{ y: '-100vh' }}
-            animate={{ y: 0 }}
-            transition={{ type: 'spring', stiffness: 50 }}
+            variants={slideLeft}
+            initial='init'
+            animate='pop'
           />
 
           <motion.div
             className='years'
-            initial={{ x: '-100vw' }}
-            animate={{ x: 0 }}
-            transition={{ type: 'spring', stiffness: 50 }}
+            variants={slideLeft}
+            initial='init'
+            animate='pop'
           >
             <h2>{years[position]}</h2>
           </motion.div>
@@ -124,21 +150,17 @@ const Stars = () => {
         <div className='rightContainer'>
           <motion.div
             className='tiltes'
-            initial={{ x: '100vh' }}
-            animate={{ x: 0 }}
-            transition={{ type: 'spring', stiffness: 50, delay: 0.25 }}
+            variants={slideRight}
+            initial='init'
+            animate='pop'
           >
             <h2>{tiltes[position]}</h2>
           </motion.div>
           <motion.div
             className='text'
-            initial={{ y: '100vw' }}
-            animate={{ y: 0 }}
-            transition={{
-              type: 'spring',
-              stiffness: 50,
-              delay: 0.5
-            }}
+            variants={slideRight}
+            initial='init'
+            animate='pop'
           >
             {texts[position]}
           </motion.div>
