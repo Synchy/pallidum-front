@@ -1,6 +1,7 @@
 import img1 from '../assets/img/guyMaupassant.jpg'
 import img2 from '../assets/img/endreArdy.jpg'
 import img3 from '../assets/img/rachelBeer.jpg'
+import img4 from '../assets/img/superman.jpg'
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
@@ -10,11 +11,22 @@ const Stars = () => {
   const texts = [
     "Lié à Gustave Flaubert et à Émile Zola, Maupassant a marqué la littérature française par ses six romans, dont Une vie en 1883, Bel-Ami en 1885, Pierre et Jean en 1887-1888, et surtout par sesnouvelles (parfois intitulées contes) comme Boule de Suif en 1880,les Contes de la bécasse (1883) ou Le Horla (1887). Il est le plus réputé des conduits de Saint Pallidum, qui s'est exprimé en lui jusqu'à ses derniers instants. Maupassant n'a eu de cesse de planter les graines de la Syphilis tout en semant les fleurs de l'imagination.",
     "Poète et journaliste hongrois, né le 22 novembre 1877 à Érmindszent (renommé « Ady Endre » depuis, commune de Căuaș) et décédé le 27 janvier 1919 à Budapest. Il est le porte-drapeau du renouveau de la poésie et de la pensée sociale progressiste en Hongrie au début du xxe siècle. Il a également levé son drapeau dès que l'appel de Saint Pallidum se faisait ressentir. On retrouve dans les poèmes d'Ardy des traces de ses exploits au nom de la Sainte Syphilis qui laissent transparaître sa détermination sans faille à planter le drapeau de Saint Pallidum sur tous les territoires à sa portée.",
-    "Après la mort de son mari, en 1903, la santé mentale de Rachel Beer se dégrade. Elle est hospitalisée sans consentement l'année suivante et ses deux journaux sont revendus. Bien qu'elle récupère une partie de ses facultés, elle reste à l'écart de la vie publique jusqu'à sa mort, à l'âge de 69 ans de la Sainte Syphilis. Sa fortune est partagée entre ses neveux, parmi lesquels le poète Siegfried Sassoon. Aucun n'aura la décence de louer le combat héroïque de leur tante et encore moins de reprendre le flambeau de son œuvre."
+    "Après la mort de son mari, en 1903, la santé mentale de Rachel Beer se dégrade. Elle est hospitalisée sans consentement l'année suivante et ses deux journaux sont revendus. Bien qu'elle récupère une partie de ses facultés, elle reste à l'écart de la vie publique jusqu'à sa mort, à l'âge de 69 ans de la Sainte Syphilis. Sa fortune est partagée entre ses neveux, parmi lesquels le poète Siegfried Sassoon. Aucun n'aura la décence de louer le combat héroïque de leur tante et encore moins de reprendre le flambeau de son œuvre.",
+    "Christopher Reeves a dédié sa vie à l'insémination des esprits de la masse par la vérité de la Très Sainte Église de Pallidum. Les médias et le pouvoir voudraient vous faire croire qu'il est décédé suite à une crise cardiaque, mais ce grand homme a accédé à la Philicité grâce au cadeau de Saint Pallidum. À travers son rôle iconique au cinéma, il a pu marquer au fer rouge l'imaginaire collectif d'un S, pour Syphilis."
   ]
-  const tiltes = ['Guy de MAUPASSANT', 'Endré ARDY', 'Rachel BEER']
-  const years = ['6 juillet 1893', '27 janvier 1919', '29 avril 1927']
-  const images = [img1, img2, img3]
+  const tiltes = [
+    'Guy de MAUPASSANT',
+    'Endré ARDY',
+    'Rachel BEER',
+    'Christopher REEVES (Superman)'
+  ]
+  const years = [
+    '6 juillet 1893',
+    '27 janvier 1919',
+    '29 avril 1927',
+    '10 octobre 2004'
+  ]
+  const images = [img1, img2, img3, img4]
 
   const [position, setPosition] = useState(0)
   const exitVariants = {
@@ -38,15 +50,20 @@ const Stars = () => {
   }
 
   const bumpVariants = {
+    bump0: {
+      y: '-50px',
+      background: '#3A0CA3',
+      transition: { type: 'spring', stiffness: 200, duration: 1, delay: 5 }
+    },
     bump1: {
       y: '-50px',
       background: '#3A0CA3',
-      transition: { type: 'spring', stiffness: 200, duration: 1, delay: 5.15 }
+      transition: { type: 'spring', stiffness: 200, duration: 1, delay: 5.4 }
     },
     bump2: {
       y: '-50px',
       background: '#3A0CA3',
-      transition: { type: 'spring', stiffness: 200, duration: 1, delay: 5.6 }
+      transition: { type: 'spring', stiffness: 200, duration: 1, delay: 5.7 }
     },
     bump3: {
       y: '-50px',
@@ -192,6 +209,12 @@ const Stars = () => {
             onClick={() => setPosition(2)}
             variants={bumpVariants}
             animate='bump1'
+            whileHover='mover'
+          ></motion.li>
+          <motion.li
+            onClick={() => setPosition(3)}
+            variants={bumpVariants}
+            animate='bump0'
             whileHover='mover'
           ></motion.li>
         </ul>
