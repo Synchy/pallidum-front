@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px 0;
+    padding: 75px 0;
     position: relative;
     .back{
       z-index: 50;
@@ -49,9 +49,9 @@
    font-weight: 500;
    line-height: 30px;
    margin-bottom: 5px;
-   padding-left: 12px;
-   padding-top: 5px;
-   animation: neon 1.5s ease-in-out infinite alternate;
+   padding-left: 15px;
+   padding-top: 15px;
+  //  animation: neon 1.5s ease-in-out infinite alternate;
   }
 
  }
@@ -61,7 +61,7 @@
    line-height: 30px;
    font-weight: 300;
    width: 100%;
-   padding-left: 20px;
+   padding: 20px;
    text-justify: auto;
  }
 

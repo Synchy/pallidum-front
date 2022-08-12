@@ -7,29 +7,29 @@ const Chronology = () => {
     card1: {
       opacity: 1,
       transition: {
-        duration: 2,
-        delay: 1.1
+        duration: 0.8,
+        delay: 0.8
       }
     },
     card2: {
       opacity: 1,
       transition: {
-        duration: 2,
-        delay: 1.7
+        duration: 0.8,
+        delay: 1.9
       }
     },
     card3: {
       opacity: 1,
       transition: {
-        duration: 2,
-        delay: 2.2
+        duration: 0.8,
+        delay: 2.4
       }
     },
     card4: {
       opacity: 1,
       transition: {
-        duration: 2,
-        delay: 2.6
+        duration: 0.8,
+        delay: 3.1
       }
     }
   }
@@ -62,8 +62,8 @@ const Chronology = () => {
                 stroke: 'url(#svgchrono_svg__a)'
               }}
               d='M5 0v998'
-              initial={{ opacity: 0, pathLength: 0 }}
-              animate={{ opacity: 1, pathLength: 1 }}
+              initial={{ visibility: 'hidden', pathLength: 0 }}
+              animate={{ visibility: 'visible', pathLength: 1 }}
               transition={{ duration: 4.5 }}
               data-name='Calque 1'
             />
