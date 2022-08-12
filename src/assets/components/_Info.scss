@@ -3,7 +3,8 @@
   height: 100vh;
   position: relative;
   .back{
-    z-index: 50;
+      cursor: default;
+      z-index: 50;
       width: 100vw;
       height: 50px;
       position: absolute;
@@ -11,6 +12,7 @@
       left: 0;
   }
   .next{
+      cursor: default;
       z-index: 50;
       width: 100vw;
       height: 50px;

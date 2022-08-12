@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 const Event = () => {
   return (
     <div className='event-wrapper'>
@@ -58,6 +59,9 @@ const Event = () => {
           </div>
         </li>
       </ul>
+      <Link to='/stars'>
+        <div className='back'></div>
+      </Link>
     </div>
   )
 }
