@@ -79,7 +79,7 @@ const Chronology = () => {
             <motion.li variants={onOff} initial='hidden' animate='card1'>
               <div className='pointOdd'></div>
               <div className='timeline-content'>
-                <h3 className='date'>3rd May, 2022</h3>
+                <h3 className='date1'>3rd May, 2022</h3>
                 <h1>Revelation</h1>
                 <p>
                   Nostradamus avait vu des entités lui annoncer la fin du monde.
@@ -91,7 +91,7 @@ const Chronology = () => {
             <motion.li variants={onOff} initial='hidden' animate='card2'>
               <div className='pointEven'></div>
               <div className='timeline-content'>
-                <h3 className='date'>1st June, 2022</h3>
+                <h3 className='date1'>1st June, 2022</h3>
                 <h1>Libération</h1>
                 <p>
                   Les Elus se sont réunis et partagent leurs Savoirs. Des voix
@@ -102,7 +102,7 @@ const Chronology = () => {
             <motion.li variants={onOff} initial='hidden' animate='card3'>
               <div className='pointOdd'></div>
               <div className='timeline-content'>
-                <h3 className='date'>24th July, 2022</h3>
+                <h3 className='date1'>24th July, 2022</h3>
                 <h1>Epanouissement</h1>
                 <p>
                   Il propage sa Sainte Parole et invite chacun à partager
@@ -114,7 +114,7 @@ const Chronology = () => {
             <motion.li variants={onOff} initial='hidden' animate='card4'>
               <div className='pointEven'></div>
               <div className='timeline-content'>
-                <h3 className='date'>1st August, 2022</h3>
+                <h3 className='date1'>1st August, 2022</h3>
                 <h1>Renaissance</h1>
                 <p>
                   L'Ascension par le Toucher, c'est atteindre le Divin. La
