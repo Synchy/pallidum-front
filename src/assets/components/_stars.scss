@@ -18,6 +18,23 @@
     }
   }
   
+  .back{
+    z-index: 50;
+      width: 100vw;
+      height: 50px;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  .next{
+      z-index: 50;
+      width: 100vw;
+      height: 50px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  
   .starContainer {
     display: flex;
     width: 1000px;

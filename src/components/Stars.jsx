@@ -4,6 +4,7 @@ import img3 from '../assets/img/rachelBeer.jpg'
 import arrow from '../assets/img/arrow.svg'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const Stars = () => {
   const texts = [
@@ -154,6 +155,12 @@ const Stars = () => {
           ></motion.li>
         </ul>
       </div>
+      <Link to='/chronologie'>
+        <div className='back'></div>
+      </Link>
+      <Link to='/evenements'>
+        <div className='next'></div>
+      </Link>
     </div>
   )
 }

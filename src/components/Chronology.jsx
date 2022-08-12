@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const Chronology = () => {
   const onOff = {
@@ -122,6 +123,12 @@ const Chronology = () => {
             </motion.li>
           </ul>
         </div>
+        <Link to='/info'>
+          <div className='back'></div>
+        </Link>
+        <Link to='/stars'>
+          <div className='next'></div>
+        </Link>
       </div>
     </>
   )
