@@ -12,7 +12,6 @@ const Home = () => {
       <Routes>
         <Route path='/' element={<Intro />} />
         <Route path='/info' element={<Info />} />
-        {/* <Route path='/info' element={<Info />} />*/}
         <Route path='/stars' element={<Stars />} />
         <Route path='/chronologie' element={<Chronology />} />
         <Route path='/evenements' element={<Event />} />

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const Info = () => {
   const pathVariants = {
@@ -114,6 +115,12 @@ const Info = () => {
             </g>
           </g>
         </svg>
+        <Link to='/'>
+          <div className='back'></div>
+        </Link>
+        <Link to='/chronologie'>
+          <div className='next'></div>
+        </Link>
       </div>
     </div>
   )

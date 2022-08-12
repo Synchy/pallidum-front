@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 import cloud1 from '../assets/img/Syphilis4.png'
 import cloud2 from '../assets/img/Syphilis3.png'
@@ -214,6 +215,9 @@ const Intro = () => {
             </g>
           </g>
         </svg>
+        <Link to='/info'>
+          <div className='next'></div>
+        </Link>
       </div>
     </div>
   )
