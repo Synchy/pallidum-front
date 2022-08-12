@@ -5,6 +5,14 @@
   justify-content: center;
   width: 100vw;
   height: 100vh;
+  .next{
+      z-index: 50;
+      width: 100vw;
+      height: 50px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
   
   .cloudsContainer {
     width: 100vw;
