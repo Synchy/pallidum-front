@@ -39,6 +39,16 @@ const Info = () => {
     }
   }
 
+  const bouger = {
+    initial: { x: 0 },
+    move: { x: -400 }
+  }
+
+  const pasBouger = {
+    initial: '',
+    move: ''
+  }
+
   return (
     <motion.div className='info' variants={exitVariants} exit='exit'>
       <div className='gontranFather'>
@@ -126,7 +136,6 @@ const Info = () => {
           <div className='next'></div>
         </Link>
       </div>
-
       <div className='infoContent'>
         <motion.div
           id='info1'
@@ -134,12 +143,11 @@ const Info = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 3.5 }}
         >
-          <h2 className='infoTitle'>Coucou</h2>
+          <h2 className='infoTitle'>L'amour est notre arme</h2>
           <p className='infoDescription'>
-            Jujubes jelly beans cake cupcake tart muffin. Sweet roll pastry
-            pudding ice cream sesame snaps carrot cake oat cake. Danish macaroon
-            sesame snaps topping apple pie donut. Dessert candy canes oat cake
-            macaroon lollipop pie.
+            La très sainte église de Pallidum a une vision pour l'humanité, la
+            seule vision pour la sortir des ténèbres : l'Évolution Sexuellement
+            Transmissible.
           </p>
         </motion.div>
         <motion.div
@@ -148,12 +156,13 @@ const Info = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 2.8 }}
         >
-          <h2 className='infoTitle'>Coucou</h2>
+          <h2 className='infoTitle'>Le très Saint Pallidum</h2>
           <p className='infoDescription'>
-            Jujubes jelly beans cake cupcake tart muffin. Sweet roll pastry
-            pudding ice cream sesame snaps carrot cake oat cake. Danish macaroon
-            sesame snaps topping apple pie donut. Dessert candy canes oat cake
-            macaroon lollipop pie.
+            Saint Pallidum opère ses miracles en nous depuis toujours, mais ce
+            n'est qu'en 1905 que nous avons découvert ses actions bienfaisantes.
+            Pallidum a introduit la Bienveillante Syphilis, qui n'est pas la
+            maladie, mais le remède et ainsi comblé le trou de notre
+            aveuglement.
           </p>
         </motion.div>
         <motion.div
@@ -162,35 +171,60 @@ const Info = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 4.2 }}
         >
-          <h2 className='infoTitle'>Kikou</h2>
+          <h2 className='infoTitle'>#JeSuisSiphylis</h2>
           <p className='infoDescription'>
-            Jujubes jelly beans cake cupcake tart muffin. Sweet roll pastry
-            pudding ice cream sesame snaps carrot cake oat cake. Danish macaroon
-            sesame snaps topping apple pie donut. Dessert candy canes oat cake
-            macaroon lollipop pie. Jujubes jelly beans cake cupcake tart muffin.
-            Sweet roll pastry pudding ice cream sesame snaps carrot cake oat
-            cake. Danish macaroon sesame snaps topping apple pie donut. Dessert
-            candy canes oat cake macaroon lollipop pie.
+            Fidèle à lui-même, l'humain a cherché à détruire ce qui est bon pour
+            lui. La très Sainte Église de Pallidum rétablit la vérité quant à
+            l'existe de Saint Pallidum et la nature de son cadeau. Le monde est
+            au bord de la destruction.
+            <br />
+            <br />
+            La Bienveillante Syphilis nous permet de contenir la population
+            mondiale en la réduisant, à travers la jouissance charnelle. À
+            travers notre action, nous répandons ce que Saint Pallidum a déversé
+            en nous.
           </p>
         </motion.div>
-        <motion.div id='moveText'>
-          <motion.div id='info4'>
-            <h2 className='infoTitle'>La marque des élus</h2>
-            <p className='infoDescription'>
-              Jujubes jelly beans cake cupcake tart muffin. Sweet roll pastry
-              pudding ice cream sesame snaps carrot cake oat cake. Danish
-              macaroon sesame snaps topping apple pie donut. Dessert candy canes
-              oat cake macaroon lollipop pie. Jujubes jelly beans cake cupcake
-              tart muffin. Sweet roll pastry pudding ice cream sesame snaps
-              carrot cake oat cake. Danish macaroon sesame snaps topping apple
-              pie donut. Dessert candy canes oat cake macaroon lollipop pie.
-            </p>
-          </motion.div>
-          <img
+        <motion.div
+          id='moveText'
+          variants={pasBouger}
+          initial='initial'
+          whileHover='move'
+        >
+          <motion.img
             src={syphilisMouth}
             className='syphiMouth'
             alt='Symptôme syphilis bouche'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 5.5 }}
           />
+          <motion.div id='info4' variants={bouger}>
+            <motion.h2
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 6 }}
+              className='infoTitle'
+            >
+              La marque des élus
+            </motion.h2>
+            <motion.p
+              className='infoDescription'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 6 }}
+            >
+              Ceux et celles qui ont été touchés par la grâce sont
+              reconnaissables entre mille, car Saint Pallidum dépose ses baisers
+              sur leur peau.
+              <br />
+              <br />
+              Les Miraculeux Soleils Brûlés, aussi appelés Marques
+              d'Attouchement de Saint Pallidum, purgeront le monde en lui
+              accordant la rédemption, cependant que jaillira la purification
+              des élus.
+            </motion.p>
+          </motion.div>
         </motion.div>
       </div>
     </motion.div>

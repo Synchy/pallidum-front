@@ -2,6 +2,14 @@
   width: 100vw;
   height: 100vh;
   position: relative;
+
+  #moveText {
+    width: fit-content;
+    position: absolute;
+    top: 370px;
+    right: 300px;
+  }
+
   .back{
       cursor: default;
       z-index: 50;
@@ -11,6 +19,7 @@
       top: 0;
       left: 0;
   }
+
   .next{
       cursor: default;
       z-index: 50;
@@ -55,7 +64,6 @@
       p {
         position: absolute;
         top: 40px;
-        text-align: justify;
       }
     }
 
@@ -68,7 +76,6 @@
       p {
         position: absolute;
         top: 40px;
-        text-align: justify;
       }
     }
 
@@ -81,15 +88,15 @@
       p {
         position: absolute;
         top: 40px;
-        text-align: justify;
       }
     }
 
     #info4 {
       position: absolute;
       width: 250px;
-      bottom: 500px;
-      right: 330px;
+      bottom: 370px;
+      right: 100px;
+      z-index: -10;
 
       p {
         position: absolute;
@@ -97,12 +104,12 @@
         text-align: justify;
       }
     }
-    
+
       .syphiMouth {
         width: 400px;
-        position: absolute;
         right: 300px;
         top: 370px;
+        z-index: 1;
       }
   }
 }
