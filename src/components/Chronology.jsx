@@ -80,7 +80,7 @@ const Chronology = () => {
             <motion.li variants={onOff} initial='hidden' animate='card1'>
               <div className='pointOdd'></div>
               <div className='timeline-content'>
-                <h3 className='date'>3 mai 1547</h3>
+                <h3 className='date1'>3 mai 1547</h3>
                 <h1>Revelation</h1>
                 <p>
                   Nostradamus perçoit la fin du monde dans ses visions.
@@ -93,7 +93,7 @@ const Chronology = () => {
             <motion.li variants={onOff} initial='hidden' animate='card2'>
               <div className='pointEven'></div>
               <div className='timeline-content'>
-                <h3 className='date'>1er juin 1751</h3>
+                <h3 className='date1'>1er juin 1751</h3>
                 <h1>Contrition</h1>
                 <p>
                   Des voix Divines visitent les rêves de Napoléon et lui
@@ -106,7 +106,7 @@ const Chronology = () => {
             <motion.li variants={onOff} initial='hidden' animate='card3'>
               <div className='pointOdd'></div>
               <div className='timeline-content'>
-                <h3 className='date'>24 juillet 1905</h3>
+                <h3 className='date1'>24 juillet 1905</h3>
                 <h1>Épanouissement</h1>
                 <p>
                   Saint Pallidum propage son Saint Cadeau et invite chacun à
@@ -118,7 +118,7 @@ const Chronology = () => {
             <motion.li variants={onOff} initial='hidden' animate='card4'>
               <div className='pointEven'></div>
               <div className='timeline-content'>
-                <h3 className='date'>Été 2022</h3>
+                <h3 className='date1'>Été 2022</h3>
                 <h1>Renaissance</h1>
                 <p>
                   Saint Pallidum multiplie les épisodes caniculaires afin de

@@ -20,7 +20,7 @@ const Event = () => {
             </p>
           </div>
           <div className='info-describe'>
-            <div className='date'>
+            <div className='dates'>
               <p>Vendredi 12 aoôut 2022</p>
             </div>
 
@@ -49,7 +49,7 @@ const Event = () => {
             </p>
           </div>
           <div className='info-describe'>
-            <div className='date'>
+            <div className='dates'>
               <p>Samedi 20 aoôut 2022</p>
             </div>
 
@@ -78,7 +78,7 @@ const Event = () => {
             </p>
           </div>
           <div className='info-describe'>
-            <div className='date'>
+            <div className='dates'>
               <p>Vendredi 27 août 2022</p>
             </div>
 
@@ -106,7 +106,7 @@ const Event = () => {
             </p>
           </div>
           <div className='info-describe'>
-            <div className='date'>
+            <div className='dates'>
               <p>Vendredi 2 septembre 2022</p>
             </div>
 
@@ -134,7 +134,7 @@ const Event = () => {
             </p>
           </div>
           <div className='info-describe'>
-            <div className='date'>
+            <div className='dates'>
               <p>Dimanche 4 septembre 2022</p>
             </div>
 
