@@ -1,0 +1,115 @@
+.info {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  #moveText {
+    width: fit-content;
+    position: absolute;
+    top: 370px;
+    right: 400px;
+  }
+
+  .back{
+      cursor: default;
+      z-index: 50;
+      width: 100vw;
+      height: 50px;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+
+  .next{
+      cursor: default;
+      z-index: 50;
+      width: 100vw;
+      height: 50px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+  h2, p {
+    color: white;
+  }
+
+  .gontranFather {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+
+    .gontran {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+    }
+  }
+
+  .infoContent {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    .infoTitle {
+      font-size: 1.4rem;
+    }
+
+    #info1 {
+      position: absolute;
+      width: 250px;
+      top: 120px;
+      left: 380px;
+
+      p {
+        position: absolute;
+        top: 40px;
+      }
+    }
+
+    #info2 {
+      position: absolute;
+      width: 250px;
+      top: 115px;
+      left: 720px;
+
+      p {
+        position: absolute;
+        top: 40px;
+      }
+    }
+
+    #info3 {
+      position: absolute;
+      width: 250px;
+      bottom: 500px;
+      left: 330px;
+
+      p {
+        position: absolute;
+        top: 40px;
+      }
+    }
+
+    #info4 {
+      position: absolute;
+      width: 250px;
+      bottom: 370px;
+      right: 100px;
+      z-index: -10;
+
+      p {
+        position: absolute;
+        top: 40px;
+        text-align: justify;
+      }
+    }
+
+      .syphiMouth {
+        width: 400px;
+        right: 300px;
+        top: 370px;
+        z-index: 1;
+      }
+  }
+}

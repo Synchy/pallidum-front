@@ -1,0 +1,85 @@
+.intro {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  
+  .next{
+    cursor: default;
+      z-index: 50;
+      width: 100vw;
+      height: 50px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  
+  .cloudsContainer {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+    .cloud {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      height: fit-content;
+    }
+  }
+
+  .logo {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  
+  .gaetanFather {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 100;
+
+    .gaetan {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      z-index: -10;
+    }
+  }
+  
+  .title {
+    width: 100vw;
+    height: 100vh;
+    font-size: 8rem;
+    color: #fff;
+    animation: neon 1.5s ease-in-out infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #B5179E,
+      0 0 70px #B5179E, 0 0 80px #B5179E, 0 0 100px #B5179E, 0 0 150px #B5179E;
+  }
+  to {
+    text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 20px #B5179E,
+      0 0 35px #B5179E, 0 0 40px #B5179E, 0 0 50px #B5179E, 0 0 75px #B5179E;
+  }
+}
+
+h2 {
+  color: white;
+  height: fit-content;
+  width: fit-content;
+  font-size: 3rem;
+  position: absolute;
+}

@@ -1,0 +1,146 @@
+.stars {
+  height: 100vh;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .anemoneMother {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+
+    .anemone {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  
+  .back{
+    cursor: default;
+    z-index: 50;
+      width: 100vw;
+      height: 50px;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  .next{
+      cursor: default;
+      z-index: 50;
+      width: 100vw;
+      height: 50px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  
+  .starContainer {
+    display: flex;
+    width: 1000px;
+    height: 800px;
+    position: relative;
+
+    .martyrsTitle {
+      color: white;
+      position: absolute;
+      top: 80px;
+      left: -40px;
+    }
+  }
+  
+  .leftContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    img {
+      height: 450px;
+      width: 400px;
+      border-radius: 1rem;
+    }
+    .years {
+      width: 100%;
+      display: flex;
+      padding: 2rem;
+    }
+  }
+  
+  .rightContainer {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 800px;
+    width: 800px;
+  
+    .tiltes {
+      width: 100%;
+      margin-top: 2rem;
+      padding: 2rem;
+    }
+  
+    .text {
+      color: white;
+      background: rgba(0, 0, 0, .5);
+      margin-top: 10rem;
+      margin-left: -70px;
+      padding: 2rem;
+      position: absolute;
+      z-index: 0;
+      width: 600px;
+    }
+  
+  
+  }
+  
+  .navStars {
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+  
+    .actions {
+      img {
+          width: 25px;
+          cursor: pointer;
+        }
+  
+        .left,
+        .right {
+          display: inline-block;
+        }
+  
+        .left {
+          transform: scaleX(-1);
+          margin-right: 40px;
+        }
+    }
+  
+    .stepper, ul {
+      list-style: none;
+      width: 600px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+  
+      li {
+          position: relative;
+          cursor: pointer;
+            width: 32px;
+            height: 32px;
+            opacity: 1;
+            background: #4361EE;
+            border-radius: 50%;
+            z-index: 10;
+          
+          
+        }
+    }
+  }
+}
+

@@ -1,0 +1,146 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 75px 0;
+    position: relative;
+    .back{
+      cursor: default;
+      z-index: 50;
+      width: 100vw;
+      height: 50px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .next{
+      cursor: default;
+      z-index: 50;
+      width: 100vw;
+      height: 50px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+ .timeline {
+    width: 80%;
+    height: auto; 
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+ }
+
+ .timeline ul {
+    list-style: none;
+ }
+
+ .timeline ul li {
+    background-color: #1e1f22;
+    color: white;
+    border-radius: 30px; 
+    margin-bottom: 40px;
+    width: 50%;
+    position: relative;
+    transform: translateX(30px);
+
+    .timeline-content {
+      padding: 5px;
+    }
+
+ .timeline-content h1 {
+   font-size: 25px;
+   font-weight: 500;
+   line-height: 30px;
+   padding-left: 15px;
+   padding-top: 15px;
+   color:#B5179E;
+  }
+
+ }
+
+ .timeline-content p{
+   font-size: 16px;
+   line-height: 30px;
+   font-weight: 300;
+   width: 100%;
+   padding: 5px 20px;
+   text-justify: auto;
+   padding-bottom: 10px;
+ }
+
+ .timeline-content .date1 {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  padding-left: 15px;
+}
+
+
+
+ .timeline ul li:nth-child(odd) {
+  float: left;
+  clear: right;
+  transform: translate(-20px);
+  border-top-right-radius: 0%;
+  box-shadow: -2.6px 5.8px 9.6px rgba(111, 110, 110, 0.193);
+  
+}
+.timeline ul li:nth-child(even) {
+  float: right;
+  clear: left;
+  transform: translate(20px);
+  border-top-left-radius: 0%;
+  box-shadow: -2.6px 5.8px 9.6px rgba(111, 110, 110, 0.193);
+}
+
+ .timeline ul li:last-child{
+   margin-bottom: 0;
+ }
+
+ .timeline ul li::after {
+  content: ' ';
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  background-color:#7209B7;
+  border-radius: 50%;
+  top: 0;
+}
+
+.timeline ul li:nth-child(odd)::after{
+  transform: translate(50%, -50%);
+  right: -20px;
+}
+
+.timeline ul li:nth-child(even)::after{
+  transform: translate(-50%, -50%);
+  left: -20px;
+}
+
+.timeline-content  h3 {
+  position: absolute;
+  top: -20px;
+}
+
+.timeline ul li:hover:after {
+  background-color: #F72585
+}
+
+.sly {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+
+  .comete {
+    width: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+  }
+  }
