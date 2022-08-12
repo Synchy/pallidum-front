@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 const Event = () => {
   return (
     <div className='box-wrap'>
@@ -143,6 +144,10 @@ const Event = () => {
           </div>
         </div>
       </div>
+
+      <Link to='/stars'>
+        <div className='back'></div>
+      </Link>
     </div>
   )
 }

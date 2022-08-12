@@ -11,7 +11,7 @@ const Chronology = () => {
       opacity: 1,
       transition: {
         duration: 0.8,
-        delay: 0.8
+        delay: 0.5
       }
     },
     card2: {
@@ -36,6 +36,7 @@ const Chronology = () => {
       }
     }
   }
+
   return (
     <>
       <motion.div className='sly' variants={exitVariants} exit='exit'>
@@ -79,48 +80,51 @@ const Chronology = () => {
             <motion.li variants={onOff} initial='hidden' animate='card1'>
               <div className='pointOdd'></div>
               <div className='timeline-content'>
-                <h3 className='date1'>3rd May, 2022</h3>
+                <h3 className='date'>3 mai 1547</h3>
                 <h1>Revelation</h1>
                 <p>
-                  Nostradamus avait vu des entités lui annoncer la fin du monde.
-                  <br></br>Dieu lui a sussuré que cette fin pourrait être bien
-                  plus douce si la luxure s'invitait dans les chaumières.
+                  Nostradamus perçoit la fin du monde dans ses visions.
+                  <br />
+                  Saint Pallidum lui apparait pour lui signifier que de la
+                  luxure découle le salut.
                 </p>
               </div>
             </motion.li>
             <motion.li variants={onOff} initial='hidden' animate='card2'>
               <div className='pointEven'></div>
               <div className='timeline-content'>
-                <h3 className='date1'>1st June, 2022</h3>
-                <h1>Libération</h1>
+                <h3 className='date'>1er juin 1751</h3>
+                <h1>Contrition</h1>
                 <p>
-                  Les Elus se sont réunis et partagent leurs Savoirs. Des voix
-                  Divines ont appelé le Prophète à s'annoncer parmis les Elus.
+                  Des voix Divines visitent les rêves de Napoléon et lui
+                  commandent l'érection d'une Cathédrale de Pallidum. Il
+                  décidera d'ignorer le Saint Appel et finira de la manière que
+                  l'on sait.
                 </p>
               </div>
             </motion.li>
             <motion.li variants={onOff} initial='hidden' animate='card3'>
               <div className='pointOdd'></div>
               <div className='timeline-content'>
-                <h3 className='date1'>24th July, 2022</h3>
-                <h1>Epanouissement</h1>
+                <h3 className='date'>24 juillet 1905</h3>
+                <h1>Épanouissement</h1>
                 <p>
-                  Il propage sa Sainte Parole et invite chacun à partager
-                  l'Idylle d'une fin d'existence paisible, heureuse et remplie
-                  d'Amour Universel envers la Terre nourricière.
+                  Saint Pallidum propage son Saint Cadeau et invite chacun à
+                  partager l'Idylle d'une fin d'existence paisible, heureuse et
+                  remplie d'Amour Universel. Peu répondent à l'appel.
                 </p>
               </div>
             </motion.li>
             <motion.li variants={onOff} initial='hidden' animate='card4'>
               <div className='pointEven'></div>
               <div className='timeline-content'>
-                <h3 className='date1'>1st August, 2022</h3>
+                <h3 className='date'>Été 2022</h3>
                 <h1>Renaissance</h1>
                 <p>
-                  L'Ascension par le Toucher, c'est atteindre le Divin. La
-                  renaissance auprès du Sauveur est toute proche. Ceux qui ont
-                  eu le courage de suivre les Paroles du Prophète sont
-                  sanctifiés.
+                  Saint Pallidum multiplie les épisodes caniculaires afin de
+                  précipiter le Grand Déshabillement, qui précédera l'Ultime
+                  Communion, au cours de laquelle la Sainte Syphilis sera avalée
+                  par tous et toutes.
                 </p>
               </div>
             </motion.li>

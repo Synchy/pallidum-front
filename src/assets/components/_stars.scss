@@ -1,4 +1,5 @@
 .stars {
+  height: 100vh;
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -20,6 +21,7 @@
   }
   
   .back{
+    cursor: default;
     z-index: 50;
       width: 100vw;
       height: 50px;
@@ -28,6 +30,7 @@
       left: 0;
   }
   .next{
+      cursor: default;
       z-index: 50;
       width: 100vw;
       height: 50px;

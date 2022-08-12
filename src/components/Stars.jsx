@@ -8,9 +8,9 @@ import { Link } from 'react-router-dom'
 
 const Stars = () => {
   const texts = [
-    'Lié à Gustave Flaubert et à Émile Zola, Maupassant a marqué la littérature française par ses six romans, dont Une vie en 1883, Bel-Ami en 1885, Pierre et Jean en 1887-1888, et surtout par sesnouvelles (parfois intitulées contes) comme Boule de Suif en 1880,les Contes de la bécasse (1883) ou Le Horla (1887).',
-    'Poète et journaliste hongrois, né le 22 novembre 1877 à Érmindszent (renommé « Ady Endre » depuis, commune de Căuaș) et décédé le 27 janvier 1919 à Budapest. Il est le porte-drapeau du renouveau de la poésie et de la pensée sociale progressiste en Hongrie au début du xxe siècle.',
-    "Après la mort de son mari, en 1903, sa santé mentale se dégrade. Elle est hospitalisée sans consentement l'année suivante et ses deux journaux sont revendus. Bien qu'elle récupère une partie de ses facultés, elle reste à l'écart de la vie publique jusqu'à sa mort, à l'âge de 69 ans de la syphilis probablement contaminée par son mari2. Sa fortune est partagée entre ses neveux, parmilesquels le poète Siegfried Sassoon1."
+    "Lié à Gustave Flaubert et à Émile Zola, Maupassant a marqué la littérature française par ses six romans, dont Une vie en 1883, Bel-Ami en 1885, Pierre et Jean en 1887-1888, et surtout par sesnouvelles (parfois intitulées contes) comme Boule de Suif en 1880,les Contes de la bécasse (1883) ou Le Horla (1887). Il est le plus réputé des conduits de Saint Pallidum, qui s'est exprimé en lui jusqu'à ses derniers instants. Maupassant n'a eu de cesse de planter les graines de la Syphilis tout en semant les fleurs de l'imagination.",
+    "Poète et journaliste hongrois, né le 22 novembre 1877 à Érmindszent (renommé « Ady Endre » depuis, commune de Căuaș) et décédé le 27 janvier 1919 à Budapest. Il est le porte-drapeau du renouveau de la poésie et de la pensée sociale progressiste en Hongrie au début du xxe siècle. Il a également levé son drapeau dès que l'appel de Saint Pallidum se faisait ressentir. On retrouve dans les poèmes d'Ardy des traces de ses exploits au nom de la Sainte Syphilis qui laissent transparaître sa détermination sans faille à planter le drapeau de Saint Pallidum sur tous les territoires à sa portée.",
+    "Après la mort de son mari, en 1903, la santé mentale de Rachel Beer se dégrade. Elle est hospitalisée sans consentement l'année suivante et ses deux journaux sont revendus. Bien qu'elle récupère une partie de ses facultés, elle reste à l'écart de la vie publique jusqu'à sa mort, à l'âge de 69 ans de la Sainte Syphilis. Sa fortune est partagée entre ses neveux, parmi lesquels le poète Siegfried Sassoon. Aucun n'aura la décence de louer le combat héroïque de leur tante et encore moins de reprendre le flambeau de son œuvre."
   ]
   const tiltes = ['Guy de MAUPASSANT', 'Endré ARDY', 'Rachel BEER']
   const years = ['6 juillet 1893', '27 janvier 1919', '29 avril 1927']
@@ -57,6 +57,25 @@ const Stars = () => {
       scale: 1.2
     }
   }
+  const slideLeft = {
+    init: { x: '-100vw' },
+    pop: {
+      x: 0,
+      transition: { type: 'spring', stiffness: 50, delay: 0.5 }
+    }
+  }
+  const slideRight = {
+    init: { x: '100vw' },
+    pop: {
+      x: 0,
+      transition: { type: 'spring', stiffness: 50, delay: 0.7 }
+    }
+  }
+
+  // const [anim, setAnim] = useState(false)
+  // const click1 = () => {
+  //   setPosition(1) && setAnim(anim)
+  // }
 
   return (
     <motion.div className='stars' variants={exitVariants} exit='exit'>
@@ -102,21 +121,28 @@ const Stars = () => {
       </div>
 
       <div className='starContainer'>
-        <h1 className='martyrsTitle'>Nos meilleurs martyrs</h1>
+        <motion.h1
+          className='martyrsTitle'
+          variants={slideRight}
+          initial='init'
+          animate='pop'
+        >
+          Nos meilleurs martyrs
+        </motion.h1>
         <div className='leftContainer'>
           <motion.img
             src={images[position]}
             alt='img'
-            initial={{ y: '-100vh' }}
-            animate={{ y: 0 }}
-            transition={{ type: 'spring', stiffness: 50 }}
+            variants={slideLeft}
+            initial='init'
+            animate='pop'
           />
 
           <motion.div
             className='years'
-            initial={{ x: '-100vw' }}
-            animate={{ x: 0 }}
-            transition={{ type: 'spring', stiffness: 50 }}
+            variants={slideLeft}
+            initial='init'
+            animate='pop'
           >
             <h2>{years[position]}</h2>
           </motion.div>
@@ -124,21 +150,17 @@ const Stars = () => {
         <div className='rightContainer'>
           <motion.div
             className='tiltes'
-            initial={{ x: '100vh' }}
-            animate={{ x: 0 }}
-            transition={{ type: 'spring', stiffness: 50, delay: 0.25 }}
+            variants={slideRight}
+            initial='init'
+            animate='pop'
           >
             <h2>{tiltes[position]}</h2>
           </motion.div>
           <motion.div
             className='text'
-            initial={{ y: '100vw' }}
-            animate={{ y: 0 }}
-            transition={{
-              type: 'spring',
-              stiffness: 50,
-              delay: 0.5
-            }}
+            variants={slideRight}
+            initial='init'
+            animate='pop'
           >
             {texts[position]}
           </motion.div>
